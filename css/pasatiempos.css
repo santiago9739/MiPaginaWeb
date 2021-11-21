@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 600px;
+    background: #bdc3c7;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e5069, #bdc3c76e),url(../img/pasatiempos.jpg); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e5033, #bdc3c73b),url(../img/pasatiempos.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:auto;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0; 
+    background: rgb(69, 80, 90) ;
+    background-size:auto;
+    height: 80px;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem;
+    transition: transform 0.5s;
+}
+
+nav > a:hover{
+    background-color:white;
+    color: rgb(0, 0, 0);
+    transform: translateY(-1rem);
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+    background-color:rgba(69, 80, 90, 0.7);
+    border-radius: 15px;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    background-color:rgba(69, 80, 90, 0.7);
+    border-radius: 15px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* PASATIEMPOS */
+.contenedor-mis-pasatiempos{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 4% 2%;
+    box-sizing: border-box;
+}
+
+.box{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    line-height: 0%;
+    box-shadow:0 20px 30px rgba(0, 0, 0, 0.5);
+    transition: all 500ms;
+}
+
+.box > img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 500ms;
+}
+
+.box > span{
+    font-size: 35px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2;
+}
+
+.box:hover{
+    flex: 50%;
+}
+
+.box:hover > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+footer{
+    background: rgb(69, 80, 90);
+    padding: 60px 0 30px 0;
+    margin-top: 20px;
+    overflow: hidden;
+    color: white;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 10px solid rgb(69, 80, 90);
+    text-align: center;
+}

@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 600px;
+    background: #bdc3c7;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e5069, #bdc3c76e),url(../img/contacto.png); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e5033, #bdc3c73b),url(../img/contacto.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:auto;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0; 
+    background: rgb(69, 80, 90) ;
+    background-size:auto;
+    height: 80px;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem;
+    transition: transform 0.5s;
+}
+
+nav > a:hover{
+    background-color:white;
+    color: rgb(0, 0, 0);
+    transform: translateY(-1rem);
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: rgba(69, 80, 90);
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgba(69, 80, 90);
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CONTACTO */
+
+main{
+    background: white;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0 1.5em;
+}
+
+.contenedor-mi-contacto{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em; 
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span{
+    color:rgb(69, 80, 90) ;
+}
+
+.mi-contacto{
+    box-shadow:0 0 20px 0 rgb(0, 0, 0);
+}
+
+.mi-contacto > * {
+    padding: 1em;
+}
+
+.contacto-formulario{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.contacto-formulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-formulario label{
+    display: block;
+}
+
+.contacto-formulario form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto-formulario form .block{
+    grid-column: 1/3;
+}
+
+.contacto-formulario form button,
+.contacto-formulario form input,
+.contacto-formulario form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom:2px solid rgb(69, 80, 90) ;
+}
+
+.contacto-formulario form button{
+    background: rgba(69, 80, 90,0.7);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contacto-formulario form button:hover,
+.contacto-formulario form button:focus{
+    background: rgba(69, 80, 90);
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contacto-informacion{
+    background: rgb(69, 80, 90);
+    color: white;
+}
+
+.contacto-informacion h4 .contacto-informacion ul .contacto-informacion p{
+    text-align: center;
+    margin: 0 0 1rm 0;
+}
+
+@media (min-width: 700px){
+    main{
+        padding: 0 4em;
+    }
+
+    .mi-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .mi-contacto > *{
+        padding: 2em;
+    }
+
+    .contacto-informacion h4,
+    .contacto-informacion ul,
+    .contacto-informacion p{
+        padding: 1em;
+        text-align: left;
+    }
+}
+
+
+/* footer */
+
+footer{
+    background: rgb(69, 80, 90);
+    padding: 60px 0 30px 0;
+    margin-top: 20px;
+    overflow: hidden;
+    color: white;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 10px solid rgb(69, 80, 90);
+    text-align: center;
+}
